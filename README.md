@@ -1,5 +1,7 @@
 # Claude Repurpose
 
+![Claude Repurpose](Claude-repurpose-cover.jpg)
+
 **Content Repurposing Engine for Claude Code** -- Turn 1 piece of content into 10+ platform-optimized posts in seconds.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
