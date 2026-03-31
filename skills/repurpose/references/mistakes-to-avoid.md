@@ -51,7 +51,7 @@ Common failures in content repurposing and how this skill prevents each one.
 
 **Why it fails:** Images get cropped awkwardly, text gets cut off, or the image displays with letterboxing. Each platform has specific display dimensions and cropping behavior.
 
-**How we prevent it:** platform-specs.md specifies exact dimensions per format. image-prompts.md enforces correct aspect ratios in every generation prompt.
+**How we prevent it:** platform-specs.md specifies exact dimensions per format. image-sourcing.md enforces correct aspect ratios via the 3-tier pipeline.
 
 ## 9. Publishing Without a Human Editing Pass
 

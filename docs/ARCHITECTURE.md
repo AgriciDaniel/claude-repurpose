@@ -72,7 +72,7 @@ The main orchestrator ROUTES, it does not IMPLEMENT. Each sub-skill contains:
 | voice-adaptation.md | When --voice flag set or for tone adaptation |
 | repurposing-frameworks.md | During content atomization |
 | poll-strategy.md | When generating polls |
-| image-prompts.md | When --images flag set |
+| image-sourcing.md | When sourcing images (stock, website, AI) |
 | mistakes-to-avoid.md | Quality check pass |
 | engagement-benchmarks.md | Calendar generation + quality check |
 

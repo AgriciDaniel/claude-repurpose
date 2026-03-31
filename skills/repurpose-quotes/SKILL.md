@@ -39,7 +39,7 @@ Received from the parent agent (`repurpose-visual`):
 
 Load these before generating output:
 
-- `references/image-prompts.md` -- prompt engineering patterns for /banana
+- `references/image-sourcing.md` -- 3-tier image pipeline, prompt templates, platform dimensions
 - `references/platform-specs.md` -- image dimensions per platform
 
 ## Output 1: Quotable Moments
@@ -143,25 +143,22 @@ for manual adaptation.
 Analyze the `primary_topic`, `voice_profile`, and strongest atom types to select the
 appropriate mood and palette.
 
-## Image Generation Logic
+## Image Generation — AI ONLY
 
-### If `--images` flag AND /banana is available:
+Quote cards ALWAYS require AI generation because they need custom text overlays. Stock photos cannot be used for quotes.
 
-1. Generate all 5 quote card images at 1:1 (1080x1080)
-2. Save to `images/quote-card-1.png` through `images/quote-card-5.png`
-3. Also save the prompts to `quotes/banana-prompts.md` for reference
-4. Note in output: "5 quote card images generated via /banana"
+### When /banana IS available:
+1. Generate 5 quote card images using the 6-Component Brief
+2. Each quote card: topic-relevant background + quote text + attribution
+3. Save to `images/quote-card-1.png` through `images/quote-card-5.png`
+4. Also save prompts to `banana-prompts.md` for reference
 
-### If /banana is NOT available:
-
-1. Save all prompts to `quotes/banana-prompts.md`
-2. Include full prompt text for each quote in all 3 aspect ratios
-3. Note in output: "Image prompts saved. Run /banana with these prompts to generate visuals."
-
-### If `--images` flag is NOT set:
-
-1. Save prompts only to `quotes/banana-prompts.md`
-2. Note: "Use --images flag to auto-generate quote cards"
+### When /banana is NOT available:
+1. Save all 5 prompts to `banana-prompts.md` with full detail
+2. Suggest stock photo backgrounds from Pixabay as alternatives:
+   - Search: `site:pixabay.com [topic] abstract background dark`
+   - User can overlay text manually in Canva or similar
+3. Note in output: "Quote card images pending — run `/banana generate <prompt>` or use saved backgrounds"
 
 ## Font Style Suggestions
 

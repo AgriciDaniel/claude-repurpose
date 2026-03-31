@@ -18,7 +18,7 @@ Generate visual content for Instagram and quote graphics from the provided conte
 2. Load sub-skills:
    - `repurpose-instagram/SKILL.md` for Instagram rules
    - `repurpose-quotes/SKILL.md` for quote card rules
-3. Load `repurpose/references/image-prompts.md` for /banana integration
+3. Load `repurpose/references/image-sourcing.md` for 3-tier image pipeline
 4. Load `repurpose/references/voice-adaptation.md` for tone
 5. Generate all outputs
 
@@ -59,6 +59,38 @@ For each quote, write a /banana prompt using the 5-Component Formula:
 
 If `--images` flag is set and /banana is available, note that images should be generated.
 Always save prompts to `quotes/banana-prompts.md` regardless.
+
+## Image Sourcing (3-Tier Pipeline)
+
+Before generating content, source relevant images:
+
+### Step 1: Website Images
+If the source was a URL, check the atoms file for extracted images. Filter using:
+- Skip: logos, icons, avatars, ads, tracking pixels, SVGs, images < 400px
+- Keep: content images, product shots, screenshots, charts, infographics
+- Rank by alt text relevance to content topic
+
+### Step 2: Stock Photos
+Use WebSearch to find 3-5 relevant stock images:
+- First search: `site:pixabay.com [key topic from atoms] wide professional`
+- If < 3 results: `site:unsplash.com [topic] professional`
+- If still < 3: `site:pexels.com [topic] high quality`
+- Extract direct CDN URLs from search results
+- Verify URLs exist (check they're actual image files, not search pages)
+
+### Step 3: AI Generation (Quote Cards)
+- Quote cards are ALWAYS AI-generated (need custom text overlays)
+- Use /banana if available, or save detailed prompts
+- Use the 6-Component Brief from references/image-sourcing.md
+
+### Image Assignment
+Assign images to platform outputs:
+- Twitter hero: best landscape stock photo or website image
+- Instagram carousel: mix of stock + AI-generated
+- LinkedIn post: professional stock or website image
+- Facebook post: engaging stock or website image
+- YouTube Community: square crop of best stock image
+- Newsletter hero: wide landscape stock photo
 
 ## Output
 

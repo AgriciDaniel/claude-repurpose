@@ -31,3 +31,4 @@ images/
 *.key
 oauth-token.json
 client_secret*.json
+.mcp.json

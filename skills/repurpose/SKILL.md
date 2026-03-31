@@ -252,10 +252,10 @@ Load these references as needed during the pipeline:
 | `references/hook-formulas.md` | When writing hooks, headlines, thread openers, email subjects |
 | `references/voice-adaptation.md` | After voice detection, before generating any output |
 | `references/repurposing-frameworks.md` | During atomization and calendar generation |
-| `references/carousel-templates.md` | When generating LinkedIn or Instagram carousels |
-| `references/poll-strategies.md` | When generating polls for any platform |
-| `references/cta-library.md` | When writing CTAs for any platform output |
-| `references/calendar-templates.md` | When generating the 7-day publishing calendar |
+| `references/poll-strategy.md` | When generating polls for any platform |
+| `references/image-sourcing.md` | When sourcing images (3-tier: website → stock → AI) |
+| `references/mistakes-to-avoid.md` | Quality check pass before finalizing outputs |
+| `references/engagement-benchmarks.md` | Calendar generation, engagement predictions |
 
 ## Sub-Skills
 
@@ -273,39 +273,44 @@ Load these references as needed during the pipeline:
 | `repurpose-seo` | Cross-platform | Keywords, hashtags, metadata |
 | `repurpose-calendar` | Scheduling | 7-day publishing calendar |
 
-## /banana Integration (Image Generation) — ENFORCED BY DEFAULT
+## Image Sourcing Pipeline — 3-Tier System
 
-Image generation is NOT optional. It is part of the standard pipeline.
+Images are sourced automatically for every platform. The pipeline follows a 3-tier priority chain.
 
-**Detection**: Check for `gemini_generate_image` MCP tool OR `~/.claude/skills/banana/SKILL.md`
+### Tier 1: Website Images (if input is a URL)
+When the input is a blog post or article URL, `extract_article.py` extracts images from the page.
+- Use `scripts/fetch_images.py --article-images` to filter: skip logos, icons, avatars, ads, SVGs, < 400px
+- Rank by keyword overlap with content atoms
+- These are the MOST relevant — they came from the source content itself
 
-### When /banana IS available (DEFAULT behavior, no flag needed):
-1. **ALWAYS generate images automatically** as part of the pipeline
-2. Generate ALL of these:
-   - 5 quote card images (1080x1080) from the top 5 quotable moments
-   - 1 carousel cover slide (1080x1350 for Instagram/LinkedIn)
-   - 1 hero image (1600x900 for Twitter, 1080x1080 for social)
-3. Use the 5-Component Formula: Subject → Action → Context → Composition → Style
-4. Save generated images to `./repurposed/<timestamp>/images/`
-5. ALSO save prompts to `quotes/banana-prompts.md` (for reference/regeneration)
+### Tier 2: Stock Photos (Pixabay → Unsplash → Pexels)
+Search for topic-relevant images via WebSearch:
+- `site:pixabay.com [topic keywords] wide professional` (preferred, no attribution required)
+- `site:unsplash.com [topic keywords] professional` (resize params supported)
+- `site:pexels.com [topic keywords] high quality` (fallback)
+- Extract direct CDN URLs from results
+- Verify each URL with HEAD request before using
+- Target: 3-5 relevant images
 
-### When /banana is NOT available:
-1. Save all prompts to `quotes/banana-prompts.md`
-2. Include full prompt text, aspect ratios, color palette, and platform targets
-3. Note in summary: "Images not generated — /banana not available. Prompts saved to quotes/banana-prompts.md. Run `/banana generate <prompt>` manually, or install /banana: `bash extensions/banana/install.sh`"
+### Tier 3: AI-Generated (Gemini via /banana)
+- **ALWAYS** for quote cards (text overlay requires custom design)
+- **ALWAYS** for carousel covers with title text
+- **FALLBACK** when Tiers 1-2 produce < 3 suitable images
+- Uses 6-Component Brief: Subject → Action → Context → Composition → Lighting → Style
+- Load `references/image-sourcing.md` for templates and platform dimensions
 
-**The `--images` flag is DEPRECATED** — images generate automatically when /banana is detected. The flag is kept for backward compatibility but has no effect (images always generate when possible).
+### Execution Order
+1. Check if input URL has images → extract and filter (Tier 1)
+2. Generate stock photo queries → use WebSearch to find Pixabay/Unsplash/Pexels images (Tier 2)
+3. Count total images found. If < 3 usable, generate more via /banana (Tier 3)
+4. ALWAYS generate 5 quote cards via /banana (or save prompts if unavailable)
+5. Save all images to `./repurposed/<timestamp>/images/`
+6. Include image URLs/paths in platform output files
 
-**Prompt format for /banana:**
-```
-Style: [modern/minimal/bold/editorial]
-Dimensions: [WxH]
-Background: [color/gradient/photo description]
-Text overlay: [exact text to display]
-Font style: [sans-serif bold / serif elegant / handwritten]
-Brand colors: [if detected from source]
-Mood: [professional/energetic/calm/provocative]
-```
+### /banana Detection
+Check for `gemini_generate_image` MCP tool OR `~/.claude/skills/banana/SKILL.md` OR `GOOGLE_API_KEY` env var.
+- Available: generate images automatically
+- Not available: save all prompts to `quotes/banana-prompts.md` for manual generation later
 
 ## Error Handling
 
