@@ -1,0 +1,32 @@
+{
+  "name": "claude-repurpose",
+  "version": "1.0.0",
+  "description": "Content Repurposing Engine for Claude Code. Transforms any content (YouTube videos, blog posts, podcasts, local files) into 10+ platform-optimized outputs for Twitter/X, LinkedIn, Instagram, Facebook, YouTube Community, Skool, Reddit, and email newsletters. Includes AI image generation via /banana, publishing calendars, poll generation, SEO metadata, and brand voice adaptation.",
+  "author": {
+    "name": "AgriciDaniel",
+    "url": "https://github.com/AgriciDaniel"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/AgriciDaniel/claude-repurpose",
+  "repository": "https://github.com/AgriciDaniel/claude-repurpose",
+  "keywords": [
+    "content-repurposing",
+    "social-media",
+    "twitter",
+    "linkedin",
+    "instagram",
+    "facebook",
+    "youtube",
+    "skool",
+    "reddit",
+    "newsletter",
+    "content-atomization",
+    "brand-voice",
+    "publishing-calendar",
+    "image-generation",
+    "polls",
+    "carousel",
+    "hooks",
+    "seo-metadata"
+  ]
+}

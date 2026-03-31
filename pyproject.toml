@@ -1,0 +1,12 @@
+[project]
+name = "claude-repurpose"
+version = "1.0.0"
+description = "Content Repurposing Engine skill for Claude Code"
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/AgriciDaniel/claude-repurpose"
+Repository = "https://github.com/AgriciDaniel/claude-repurpose"
+Issues = "https://github.com/AgriciDaniel/claude-repurpose/issues"

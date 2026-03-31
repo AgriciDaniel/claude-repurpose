@@ -1,0 +1,6 @@
+# Claude Repurpose - Python Dependencies
+# Minimal by design: most work is done by Claude itself
+
+beautifulsoup4>=4.12.0,<5.0.0     # Article extraction from URLs
+requests>=2.32.0,<3.0.0           # HTTP fetching
+lxml>=5.0.0,<7.0.0                # Fast HTML parsing backend for bs4
