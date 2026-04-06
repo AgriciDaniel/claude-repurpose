@@ -80,6 +80,13 @@ Use these windows as defaults. Adjust if the user specifies a timezone or audien
 | TikTok | Tue, Thu, Sat | 7-9 PM | Thu 8 PM |
 | Reddit | Mon-Fri | 8-10 AM EST | Tue 9 AM EST |
 | Quora | Mon-Fri | 9 AM - 12 PM | Wed 10 AM |
+| Threads | Tue, Thu | 10 AM - 1 PM | Thu 11 AM |
+| Pinterest | Sat, Sun | 8-11 PM | Sat 9 PM |
+| Snapchat | Mon-Fri | 10 PM - 1 AM | Wed 11 PM |
+| Discord | Weekdays | 3-8 PM EST | Wed 5 PM EST |
+| Medium | Tue-Thu | 8-10 AM | Wed 9 AM |
+| WhatsApp | Daily | 8-9 AM, 6-8 PM | Tue 8 AM |
+| Telegram | Daily | 9-11 AM, 7-9 PM | Wed 10 AM |
 | Newsletter | Tue or Thu | 8-10 AM | Tue 9 AM |
 
 ## Scheduling Rules
@@ -115,7 +122,8 @@ actually generated.
 | Priority | Platform | Content Type | Notes |
 |----------|----------|-------------|-------|
 | 1 | LinkedIn | Text post + carousel | Lead with the authoritative version |
-| 2 | Newsletter | Email excerpt (Day 0 of drip) | Send to existing subscribers |
+| 2 | Medium | Article (1500-3000 words) | In-depth launch; Google SEO play |
+| 3 | Newsletter | Email excerpt (Day 0 of drip) | Send to existing subscribers |
 
 **Engagement reminder:** "Reply to every LinkedIn comment within 60 minutes."
 
@@ -124,8 +132,9 @@ actually generated.
 | Priority | Platform | Content Type | Notes |
 |----------|----------|-------------|-------|
 | 1 | Twitter/X | Thread (8-12 tweets) | Expand on Day 1's core insight |
-| 2 | Reddit | Discussion post | Peer-to-peer version of the same insight |
-| 3 | Quora | Answer post | Authority version; targets high-traffic question |
+| 2 | Threads | Thread (5-10 posts) | Parallel to Twitter; links allowed |
+| 3 | Reddit | Discussion post | Peer-to-peer version of the same insight |
+| 4 | Quora | Answer post | Authority version; targets high-traffic question |
 
 **Engagement reminder:** "Engage with every thread reply for 2 hours after posting."
 
@@ -135,7 +144,7 @@ actually generated.
 |----------|----------|-------------|-------|
 | 1 | Instagram | Carousel (7-10 slides) + caption | Visual breakdown of the topic |
 | 2 | TikTok | Video script (15-60s) | Post after Instagram carousel; reference same atoms |
-| 3 | Twitter/X | Standalone tweet + quote card image | Highest-impact single insight |
+| 3 | Pinterest | 3-5 pins + idea pin | SEO-rich; longest-lasting content format |
 
 **Engagement reminder:** "Reply to Instagram comments within first hour for algorithm boost."
 
@@ -146,6 +155,8 @@ actually generated.
 | 1 | LinkedIn | Poll | Ask audience to weigh in on a key question |
 | 2 | Twitter/X | Poll | Same question, adapted for Twitter's format |
 | 3 | Facebook | Question post or poll | Conversational version |
+| 4 | Discord | Poll or reaction vote | Community engagement in server |
+| 5 | Telegram | Poll (quiz mode optional) | Channel engagement |
 
 **Engagement reminder:** "Vote in your own polls (sets the tone). Comment on early responses."
 
@@ -155,6 +166,7 @@ actually generated.
 |----------|----------|-------------|-------|
 | 1 | Skool | Challenge or action post | Give the community something to do |
 | 2 | YouTube Community | Text post or poll | Engage existing subscribers |
+| 3 | Discord | Discussion thread + announcement | Community conversation |
 
 **Engagement reminder:** "Pin a follow-up comment with additional context."
 
@@ -163,7 +175,8 @@ actually generated.
 | Priority | Platform | Content Type | Notes |
 |----------|----------|-------------|-------|
 | 1 | Newsletter | Email 2 (Day 2 of drip) | Deeper dive for subscribers |
-| 2 | Facebook | Text post | Casual version of a key takeaway |
+| 2 | WhatsApp | Channel update | Best insight as personal message |
+| 3 | Telegram | Channel post | Formatted broadcast with key takeaway |
 
 **Engagement reminder:** "Monitor email replies; respond to any subscriber questions."
 
@@ -172,7 +185,8 @@ actually generated.
 | Priority | Platform | Content Type | Notes |
 |----------|----------|-------------|-------|
 | 1 | Instagram | Story or reel script | Lightweight, behind-the-scenes feel |
-| 2 | Skool | Discussion post | Open-ended community question |
+| 2 | Snapchat | Story script (3-5 frames) | Ephemeral, raw feel |
+| 3 | Skool | Discussion post | Open-ended community question |
 
 **Engagement reminder:** "Respond to any leftover comments from the week across all platforms."
 

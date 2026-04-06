@@ -92,6 +92,62 @@ When detecting voice from source content, assess these 5 dimensions on a 1-5 sca
 - **Formatting:** Headers for long answers, bold key terms, numbered steps for processes
 - **Avoid:** Marketing speak, vague claims without evidence, overly casual tone, link-first answers
 
+### Threads
+- **Tone:** Casual, conversational, opinion-led, community-feeling
+- **Emoji:** Moderate (2-4, natural use)
+- **Contractions:** Always
+- **Sentence length:** Short to medium, flowing, authentic
+- **Formatting:** Line breaks between ideas, no hashtags
+- **Avoid:** Corporate tone, hashtag-stuffing, promotional feel
+
+### Pinterest
+- **Tone:** Aspirational, helpful, keyword-forward, SEO-conscious
+- **Emoji:** Minimal (0-2, decorative only)
+- **Contractions:** Occasionally
+- **Sentence length:** Medium, descriptive, action-oriented
+- **Formatting:** Keyword-first sentences, bullet-friendly descriptions
+- **Avoid:** Vague descriptions, clickbait without substance, excessive hashtags
+
+### Snapchat
+- **Tone:** Ultra-casual, ephemeral, raw, Gen-Z native, unpolished
+- **Emoji:** Heavy (part of the visual language)
+- **Contractions:** Always, slang OK
+- **Sentence length:** Very short, fragments, text-message style
+- **Formatting:** Text overlays, not paragraphs
+- **Avoid:** Polished/corporate feel, long text, formal language
+
+### Discord
+- **Tone:** Casual, community-first, peer-to-peer, gamer-adjacent
+- **Emoji:** Heavy (reactions, role markers, decorative)
+- **Contractions:** Always, informal language OK ("y'all", "ngl", "tbh")
+- **Sentence length:** Short to medium, scannable
+- **Formatting:** Discord markdown, embeds, reaction prompts
+- **Avoid:** Broadcasting tone, corporate speak, formal announcements without personality
+
+### Medium
+- **Tone:** Thoughtful, authoritative, storytelling-driven, magazine-quality
+- **Emoji:** None
+- **Contractions:** Occasionally (balance formality with personality)
+- **Sentence length:** Varied, narrative arc, literary rhythm
+- **Formatting:** Headers, pull quotes, bold key terms, clear section breaks
+- **Avoid:** Listicle-only format, AI-sounding prose, shallow takes, keyword stuffing
+
+### WhatsApp
+- **Tone:** Personal, direct, intimate, texting-a-friend feel
+- **Emoji:** Heavy (paragraph markers, emphasis, personality)
+- **Contractions:** Always
+- **Sentence length:** Very short, one thought per line
+- **Formatting:** Emoji bullets, line breaks between every thought, no markdown
+- **Avoid:** Corporate broadcasts, long paragraphs, formal language, mass-email feel
+
+### Telegram
+- **Tone:** Editorial, structured, informative, curated-feed feel
+- **Emoji:** Moderate (section markers, not decoration)
+- **Contractions:** Sometimes
+- **Sentence length:** Medium, well-structured
+- **Formatting:** Bold headlines, markdown lists, code blocks for emphasis, inline links
+- **Avoid:** Overly casual, walls of unformatted text, clickbait
+
 ### Newsletter / Email
 - **Tone:** Intimate, direct-to-reader, exclusive-feeling, personal
 - **Emoji:** Sparingly in subject line (1 max), light in body

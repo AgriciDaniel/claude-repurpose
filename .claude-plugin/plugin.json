@@ -1,7 +1,7 @@
 {
   "name": "claude-repurpose",
   "version": "1.0.0",
-  "description": "Content Repurposing Engine for Claude Code. Transforms any content (YouTube videos, blog posts, podcasts, local files) into 10+ platform-optimized outputs for Twitter/X, LinkedIn, Instagram, TikTok, Facebook, YouTube Community, Skool, Reddit, Quora, and email newsletters. Includes AI image generation via /banana, publishing calendars, poll generation, SEO metadata, and brand voice adaptation.",
+  "description": "Content Repurposing Engine for Claude Code. Transforms any content (YouTube videos, blog posts, podcasts, local files) into 17+ platform-optimized outputs for Twitter/X, Threads, LinkedIn, Instagram, TikTok, Pinterest, Snapchat, Facebook, YouTube Community, Skool, Discord, Reddit, Quora, Medium, WhatsApp Channels, Telegram, and email newsletters. Includes AI image generation via /banana, publishing calendars, poll generation, SEO metadata, and brand voice adaptation.",
   "author": {
     "name": "AgriciDaniel",
     "url": "https://github.com/AgriciDaniel"
@@ -19,8 +19,15 @@
     "youtube",
     "skool",
     "tiktok",
+    "threads",
+    "pinterest",
+    "snapchat",
+    "discord",
     "reddit",
     "quora",
+    "medium",
+    "whatsapp",
+    "telegram",
     "newsletter",
     "content-atomization",
     "brand-voice",

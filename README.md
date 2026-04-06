@@ -17,15 +17,22 @@ Takes **any content** (YouTube video, blog post, podcast, local file) and genera
 | Platform | Outputs |
 |----------|---------|
 | **Twitter/X** | Thread (8-12 tweets) + standalone tweets + poll |
+| **Threads** | Thread (5-10 posts) + standalone posts + image post |
 | **LinkedIn** | Post + PDF carousel script (10-12 slides) + poll |
 | **Instagram** | Carousel (7-10 slides) + caption + reel script |
 | **TikTok** | Video script (15-60s) + carousel/photo mode + stitch/duet concept |
+| **Pinterest** | 3-5 pin descriptions + idea pin script + board suggestions |
+| **Snapchat** | Story script (3-5 frames) + Spotlight script + AR concept |
 | **Facebook** | Post + poll + story script |
 | **YouTube Community** | Text post + image concept + poll |
 | **Skool** | Discussion + challenge prompt + poll |
+| **Discord** | Announcement + discussion thread + rich embed |
 | **Newsletter** | Excerpt + 3 subject lines + 3-email drip sequence |
 | **Reddit** | Discussion post + subreddit suggestions |
 | **Quora** | Answer (300-1000 words) + Space post + question suggestions |
+| **Medium** | Article (1500-3000 words) + tags + publication suggestions |
+| **WhatsApp** | Channel update + poll + content teaser |
+| **Telegram** | Channel post + deep dive + poll |
 | **Quote Graphics** | 5 quotable moments + AI image prompts |
 | **SEO Metadata** | Titles, descriptions, hashtags, keywords per platform |
 | **Calendar** | 7-day publishing schedule with optimal times |
@@ -98,10 +105,11 @@ Input (any content)
    statistics, arguments)   questions, contrarian takes
       |
       v
-  5 Parallel Agents         Social (Twitter+LinkedIn+Facebook)
-  (simultaneous)            Visual (Instagram+TikTok+Quotes+Images)
+  6 Parallel Agents         Social (Twitter+Threads+LinkedIn+Facebook)
+  (simultaneous)            Visual (Instagram+TikTok+Pinterest+Snapchat+Quotes)
                             Longform (Newsletter+Email+Reddit+Quora)
-                            Community (YouTube+Skool)
+                            Community (YouTube+Skool+Discord)
+                            Broadcast (WhatsApp+Telegram+Medium)
                             SEO (metadata across all)
       |
       v
@@ -128,10 +136,22 @@ Input (any content)
 │   ├── carousel.md            # 7-10 slide script
 │   ├── caption.md
 │   └── reel-script.md
+├── threads/
+│   ├── thread.md              # 5-10 post thread
+│   ├── standalone-posts.md    # 3-5 standalone posts
+│   └── image-post.md          # Image post concept
 ├── tiktok/
 │   ├── video-script.md        # 15-60s video script
 │   ├── carousel.md            # Photo mode (2-10 slides)
 │   └── stitch-duet.md         # Stitch/duet concept
+├── pinterest/
+│   ├── pins.md                # 3-5 pin descriptions
+│   ├── idea-pin.md            # Idea pin script (5-10 slides)
+│   └── boards.md              # Board suggestions
+├── snapchat/
+│   ├── story-script.md        # 3-5 frames (10s each)
+│   ├── spotlight-script.md    # Up to 60s Spotlight
+│   └── ar-concept.md          # AR lens concept
 ├── facebook/
 │   ├── post.md
 │   ├── poll.md
@@ -144,6 +164,10 @@ Input (any content)
 │   ├── discussion.md
 │   ├── challenge.md
 │   └── poll.md
+├── discord/
+│   ├── announcement.md        # Server announcement
+│   ├── thread-prompt.md       # Discussion thread starter
+│   └── embed.md               # Rich embed message
 ├── newsletter/
 │   ├── newsletter.md          # Newsletter excerpt
 │   ├── subject-lines.md
@@ -155,6 +179,18 @@ Input (any content)
 │   ├── answer.md              # 300-1000 word answer
 │   ├── space-post.md          # Quora Space post
 │   └── questions.md           # Question suggestions
+├── medium/
+│   ├── article.md             # 1500-3000 word article
+│   ├── tags-publications.md   # Tags + publication suggestions
+│   └── crosspost-note.md      # Canonical URL handling
+├── whatsapp/
+│   ├── update.md              # Channel update (100-300 chars)
+│   ├── poll.md                # Channel poll
+│   └── teaser.md              # Content teaser with link
+├── telegram/
+│   ├── post.md                # Channel post (500-1000 chars)
+│   ├── deep-dive.md           # Formatted deep dive
+│   └── poll.md                # Poll with optional quiz mode
 ├── quotes/
 │   ├── quotes.md
 │   └── banana-prompts.md
@@ -196,8 +232,8 @@ Without /banana, prompts are saved to `banana-prompts.md` for manual use.
 
 ## Architecture
 
-- **13 sub-skills** covering every platform
-- **5 parallel subagents** for maximum speed
+- **20 sub-skills** covering every platform
+- **6 parallel subagents** for maximum speed
 - **8 reference files** with platform specs, hook formulas, voice rules, and benchmarks
 - **3 Python scripts** for content extraction (article, transcript, audio)
 

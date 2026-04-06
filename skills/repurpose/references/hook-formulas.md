@@ -23,6 +23,9 @@ Hooks should sound like **thoughts, not headlines**. More human, less formulaic.
 | Instagram | "The #1 reason your content flops has nothing to do with the algorithm." | 71 |
 | TikTok | "Wait... this is what actually happens when you [topic]" | 55 |
 | Quora | "Most answers to this question miss the real issue. Here's what [X years of experience] taught me." | 90 |
+| Threads | "Something weird happens when you stop optimizing for engagement..." | 65 |
+| Pinterest | "The [topic] strategy that changed how I [outcome] (step-by-step guide)" | 70 |
+| Medium | "I spent [timeframe] investigating [topic]. What I found challenges everything we assumed." | 85 |
 
 **Character guidance:** Keep under 100 chars on Twitter. On LinkedIn, the curiosity gap should live entirely in the first visible line (before the "see more" fold). On Instagram, front-load it in the first 125 characters of the caption. On TikTok, the hook must work in 0.5-1.5 seconds with sound off (text overlay carries it). On Quora, the first 2-3 sentences must deliver the core answer immediately.
 
@@ -43,6 +46,9 @@ Hooks should sound like **thoughts, not headlines**. More human, less formulaic.
 | Instagram | "Stop creating new content. Seriously. Your best-performing post already exists." | 79 |
 | TikTok | "Everyone's doing [common approach] wrong. Watch this." | 50 |
 | Quora | "The conventional advice on this topic is dangerously oversimplified. Here's the nuanced truth." | 85 |
+| Threads | "Hot take: [common belief] is actually holding you back." | 52 |
+| Pinterest | "[Number] [topic] myths you're still believing (and what to do instead)" | 68 |
+| Medium | "The uncomfortable truth about [topic] that no one in [industry] wants to discuss." | 78 |
 
 **Character guidance:** Be bold but defensible. The rest of the content must deliver proof. Empty contrarianism burns trust fast.
 
@@ -63,6 +69,9 @@ Hooks should sound like **thoughts, not headlines**. More human, less formulaic.
 | Instagram | "This one hashtag strategy is actually shadowbanning your posts." | 63 |
 | TikTok | "Stop doing this immediately. It's killing your [topic]." | 52 |
 | Quora | "I've seen this mistake destroy [outcomes] for hundreds of [audience]. Here's what to do instead." | 88 |
+| Threads | "If you're still doing [common practice], you need to see this." | 58 |
+| Pinterest | "⚠️ [Number] [topic] mistakes ruining your [outcome] (+ fixes)" | 56 |
+| Medium | "The hidden cost of [common approach]: what [N] case studies revealed about [consequence]." | 82 |
 
 **Character guidance:** Specificity sells. "One mistake" beats "mistakes." Numbers amplify urgency. Always deliver the solution, not just the warning.
 
@@ -83,6 +92,9 @@ Hooks should sound like **thoughts, not headlines**. More human, less formulaic.
 | Instagram | "30 days. 1 video. 47 pieces of content. 2.3M total impressions." | 63 |
 | TikTok | "I tested [thing] for 30 days. The results are insane." | 52 |
 | Quora | "After analyzing [N] cases over [timeframe], three patterns emerged that most people overlook." | 88 |
+| Threads | "[Specific number]. That's how many [thing] it took to [outcome]." | 60 |
+| Pinterest | "[Number] proven [topic] tips backed by [data source] (2026 guide)" | 62 |
+| Medium | "We analyzed [N] [things] over [timeframe]. Here are the [N] patterns that predict [outcome]." | 88 |
 
 **Character guidance:** Use precise numbers (6.60% not "around 7%"). Odd numbers feel more credible than round numbers. Pair the stat with an implication or result.
 
@@ -103,6 +115,9 @@ Hooks should sound like **thoughts, not headlines**. More human, less formulaic.
 | Instagram | "Ever wonder why some carousels get saved 100x more than others?" | 64 |
 | TikTok | "Why does nobody talk about this?" | 33 |
 | Quora | "Why do most [audience] fail at [topic] despite following best practices?" | 68 |
+| Threads | "Genuine question: does anyone else struggle with [specific thing]?" | 62 |
+| Pinterest | "What's the best way to [achieve outcome]? (try these [N] ideas)" | 60 |
+| Medium | "What would [industry/topic] look like if we stopped [common practice] entirely?" | 72 |
 
 **Character guidance:** One question only. Avoid "Have you ever...?" (overused). Frame the question around the reader's desired outcome, not the topic itself.
 

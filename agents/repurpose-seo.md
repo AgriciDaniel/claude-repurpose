@@ -72,6 +72,42 @@ Generate SEO metadata for all platform outputs from the provided content atoms.
 - Preview text (40-90 chars, complements subject line)
 - Alt text for any email images
 
+### Threads
+- Keywords in post text (no hashtag support)
+- Thread title optimization for bookmarking
+- Alt text for image posts
+
+### Pinterest
+- Keyword-first pin titles (100 chars)
+- SEO-rich pin descriptions (Google indexes pins)
+- Board names with target keywords
+- Alt text for pin images
+
+### Snapchat
+- Spotlight description keywords
+- Story text overlay keywords
+- Minimal SEO (ephemeral platform)
+
+### Discord
+- Announcement keywords for server search
+- Embed title and field optimization
+- Thread title SEO for Discord search
+
+### Medium
+- Article title (60 chars, keyword-rich, Google-indexed)
+- Subtitle with secondary keywords
+- 5 tags (first = primary topic keyword)
+- First paragraph keywords (Google snippet extraction)
+
+### WhatsApp
+- Minimal SEO (private channel)
+- Link preview optimization (OG tags of linked content)
+
+### Telegram
+- Channel post keywords for Telegram search
+- Poll question keywords
+- Forward-friendly headline optimization
+
 ## Cross-Platform Consistency
 
 - Identify 3-5 primary keywords from content

@@ -127,9 +127,16 @@ PLATFORMS = {
     "youtube-community": {"icon": "YT", "name": "YouTube", "color": "#ff0000"},
     "skool": {"icon": "S", "name": "Skool", "color": "#5865f2"},
     "newsletter": {"icon": "@", "name": "Newsletter", "color": "#10b981"},
+    "threads": {"icon": "Th", "name": "Threads", "color": "#000000"},
     "tiktok": {"icon": "TT", "name": "TikTok", "color": "#00f2ea"},
+    "pinterest": {"icon": "P", "name": "Pinterest", "color": "#e60023"},
+    "snapchat": {"icon": "Sc", "name": "Snapchat", "color": "#fffc00"},
+    "discord": {"icon": "Dc", "name": "Discord", "color": "#5865f2"},
     "reddit": {"icon": "R", "name": "Reddit", "color": "#ff4500"},
     "quora": {"icon": "Qa", "name": "Quora", "color": "#b92b27"},
+    "medium": {"icon": "M", "name": "Medium", "color": "#00ab6c"},
+    "whatsapp": {"icon": "WA", "name": "WhatsApp", "color": "#25d366"},
+    "telegram": {"icon": "Tg", "name": "Telegram", "color": "#0088cc"},
     "quotes": {"icon": "Q", "name": "Quotes", "color": "#a855f7"},
 }
 META_FILES = ["atoms.md", "seo-metadata.md", "calendar.md", "summary.md"]

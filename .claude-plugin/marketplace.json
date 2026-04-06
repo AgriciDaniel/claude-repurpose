@@ -10,7 +10,7 @@
     {
       "name": "claude-repurpose",
       "source": "./",
-      "description": "Content Repurposing Engine for Claude Code. 13 sub-skills covering Twitter/X, LinkedIn, Instagram, TikTok, Facebook, YouTube Community, Skool, Reddit, Quora, Newsletter/Email, quote graphics, SEO metadata, and publishing calendars. Transforms any content into 10+ platform-optimized outputs with brand voice adaptation, poll generation, and AI image generation via /banana."
+      "description": "Content Repurposing Engine for Claude Code. 20 sub-skills covering Twitter/X, Threads, LinkedIn, Instagram, TikTok, Pinterest, Snapchat, Facebook, YouTube Community, Skool, Discord, Reddit, Quora, Medium, WhatsApp Channels, Telegram, Newsletter/Email, quote graphics, SEO metadata, and publishing calendars. Transforms any content into 17+ platform-optimized outputs with brand voice adaptation, poll generation, and AI image generation via /banana."
     }
   ]
 }
