@@ -76,6 +76,22 @@ When detecting voice from source content, assess these 5 dimensions on a 1-5 sca
 - **Formatting:** Markdown headers, bullet points, TL;DR at top or bottom
 - **Avoid:** ANY marketing speak, self-promotion framing, corporate buzzwords, "influencer" energy
 
+### TikTok
+- **Tone:** Fast-paced, casual, Gen-Z influenced, personality-forward, raw/authentic
+- **Emoji:** Moderate (2-4, used naturally not decoratively)
+- **Contractions:** Always
+- **Sentence length:** Very short. Punchy. Conversational fragments.
+- **Formatting:** Script format with timestamps and text overlay notes
+- **Avoid:** Corporate language, slow builds, passive voice, over-produced feel
+
+### Quora
+- **Tone:** Expert, helpful, thorough, evidence-based, authoritative but approachable
+- **Emoji:** None
+- **Contractions:** Occasionally (more formal than Reddit, less than Twitter)
+- **Sentence length:** Medium to long, well-structured, paragraphed
+- **Formatting:** Headers for long answers, bold key terms, numbered steps for processes
+- **Avoid:** Marketing speak, vague claims without evidence, overly casual tone, link-first answers
+
 ### Newsletter / Email
 - **Tone:** Intimate, direct-to-reader, exclusive-feeling, personal
 - **Emoji:** Sparingly in subject line (1 max), light in body

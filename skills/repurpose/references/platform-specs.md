@@ -101,6 +101,35 @@ Comprehensive specs for all supported platforms. Always consult before generatin
 | **Post types** | Text, image, link, poll, video |
 | **Key rule** | NO marketing speak. Be peer-to-peer, evidence-first, genuinely helpful. |
 
+## TikTok
+
+| Spec | Value |
+|------|-------|
+| **Video length** | 15-60s sweet spot (up to 3 min, 10 min for some accounts) |
+| **Video dimensions** | 1080x1920 (9:16) |
+| **Carousel/Photo mode** | 2-10 slides, 1080x1350 (4:5) |
+| **Algorithm weight** | Completion rate #1; then shares, comments, likes |
+| **Hook window** | 0.5-1.5 seconds (determines whether viewer stays) |
+| **Hashtags** | 3-5 (mix 1-2 trending + 2-3 niche) |
+| **Text overlay** | Avoid bottom 20% (TikTok UI overlap) |
+| **Post types** | Video, photo carousel, stitch, duet, LIVE |
+| **Best posting time** | Tue/Thu/Sat 7-9 PM |
+| **Key rule** | Completion rate is everything. Every second must earn the next. Hook or die. |
+
+## Quora
+
+| Spec | Value |
+|------|-------|
+| **Answer length** | 300-1000 words optimal (longer detailed answers get 2-3x more upvotes) |
+| **Formatting** | Bold, italic, headers, lists, blockquotes, images, links |
+| **Algorithm weight** | Question-answer relevance, credentials, upvotes, recency |
+| **SEO value** | High -- Google indexes Quora answers in featured snippets |
+| **Space posts** | 150-500 words, thought-leadership format |
+| **Self-promotion** | One link per answer maximum; must be contextually relevant |
+| **Post types** | Answer, Space post, question (asking) |
+| **Best posting time** | Mon-Fri 9 AM - 12 PM (knowledge workers active) |
+| **Key rule** | Depth and expertise win. Complete, well-structured answers with evidence outperform everything. |
+
 ## Newsletter / Email
 
 | Spec | Value |
@@ -124,6 +153,8 @@ Comprehensive specs for all supported platforms. Always consult before generatin
 | Instagram | Reel / Story | 1080x1920 | 9:16 |
 | Facebook | Feed image | 1080x1350 | 4:5 |
 | Facebook | Link preview | 1200x628 | ~1.91:1 |
+| TikTok | Video cover | 1080x1920 | 9:16 |
+| TikTok | Photo carousel | 1080x1350 | 4:5 |
 | YouTube Community | Post image | 1080x1080 | 1:1 |
 
 ## Posting Time Summary
@@ -135,4 +166,6 @@ Comprehensive specs for all supported platforms. Always consult before generatin
 | Instagram | Mon/Wed/Fri | 11AM-1PM |
 | Facebook | Tuesday | 9AM-12PM |
 | YouTube Community | Any (2-4x/week) | Varies by audience |
+| TikTok | Tue/Thu/Sat | 7-9 PM |
+| Quora | Mon-Fri | 9 AM-12 PM |
 | Newsletter | Tuesday or Thursday | 8-10AM |

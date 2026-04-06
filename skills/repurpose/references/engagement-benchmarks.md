@@ -112,6 +112,31 @@ Data-backed benchmarks for setting realistic expectations and evaluating repurpo
 
 **Key takeaway:** Reddit punishes overt self-promotion. Repurposed content must be genuinely valuable and community-native. Discussion quality matters more than raw views.
 
+## TikTok
+
+| Metric | Value |
+|--------|-------|
+| Average engagement rate | 4-8% (highest of any platform for organic reach) |
+| Completion rate threshold | >70% completion = algorithm boost |
+| Hook window | 0.5-1.5 seconds (viewer decides to stay or scroll) |
+| Optimal video length | 15-60 seconds (shorter = higher completion rate) |
+| Carousel/Photo mode engagement | Rising format; lower competition than video |
+| Stitch/Duet boost | Content using stitch/duet gets 20-30% more reach |
+
+**Key takeaway:** TikTok has the highest organic reach potential of any platform. Completion rate is the single most important metric. A 30-second video with 90% completion will massively outperform a 3-minute video with 20% completion. Hook quality determines everything.
+
+## Quora
+
+| Metric | Value |
+|--------|-------|
+| Top answer visibility | First answer + most upvoted answer get 80%+ of views |
+| Answer length correlation | Longer detailed answers (500-1000 words) get 2-3x more upvotes |
+| SEO traffic share | Quora answers appear in ~15% of Google featured snippets for Q&A queries |
+| Credentials effect | Answers from credentialed profiles get 40%+ more views |
+| Evergreen lifespan | Top answers generate traffic for months to years |
+
+**Key takeaway:** Quora is the only platform where content gets MORE valuable over time. A well-written answer to a high-traffic question can generate SEO traffic for years. Invest in depth and authority.
+
 ## Newsletter/Email
 
 | Metric | Good | Excellent |

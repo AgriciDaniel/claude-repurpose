@@ -127,7 +127,9 @@ PLATFORMS = {
     "youtube-community": {"icon": "YT", "name": "YouTube", "color": "#ff0000"},
     "skool": {"icon": "S", "name": "Skool", "color": "#5865f2"},
     "newsletter": {"icon": "@", "name": "Newsletter", "color": "#10b981"},
+    "tiktok": {"icon": "TT", "name": "TikTok", "color": "#00f2ea"},
     "reddit": {"icon": "R", "name": "Reddit", "color": "#ff4500"},
+    "quora": {"icon": "Qa", "name": "Quora", "color": "#b92b27"},
     "quotes": {"icon": "Q", "name": "Quotes", "color": "#a855f7"},
 }
 META_FILES = ["atoms.md", "seo-metadata.md", "calendar.md", "summary.md"]

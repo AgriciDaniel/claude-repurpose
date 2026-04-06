@@ -77,7 +77,9 @@ Use these windows as defaults. Adjust if the user specifies a timezone or audien
 | Facebook | Tue-Fri | 9 AM - 12 PM | Thu 10 AM |
 | YouTube Community | Tue, Thu | 10 AM - 12 PM | Tue 11 AM |
 | Skool | Mon, Wed, Fri | 9 AM - 11 AM | Mon 10 AM |
+| TikTok | Tue, Thu, Sat | 7-9 PM | Thu 8 PM |
 | Reddit | Mon-Fri | 8-10 AM EST | Tue 9 AM EST |
+| Quora | Mon-Fri | 9 AM - 12 PM | Wed 10 AM |
 | Newsletter | Tue or Thu | 8-10 AM | Tue 9 AM |
 
 ## Scheduling Rules
@@ -123,6 +125,7 @@ actually generated.
 |----------|----------|-------------|-------|
 | 1 | Twitter/X | Thread (8-12 tweets) | Expand on Day 1's core insight |
 | 2 | Reddit | Discussion post | Peer-to-peer version of the same insight |
+| 3 | Quora | Answer post | Authority version; targets high-traffic question |
 
 **Engagement reminder:** "Engage with every thread reply for 2 hours after posting."
 
@@ -131,7 +134,8 @@ actually generated.
 | Priority | Platform | Content Type | Notes |
 |----------|----------|-------------|-------|
 | 1 | Instagram | Carousel (7-10 slides) + caption | Visual breakdown of the topic |
-| 2 | Twitter/X | Standalone tweet + quote card image | Highest-impact single insight |
+| 2 | TikTok | Video script (15-60s) | Post after Instagram carousel; reference same atoms |
+| 3 | Twitter/X | Standalone tweet + quote card image | Highest-impact single insight |
 
 **Engagement reminder:** "Reply to Instagram comments within first hour for algorithm boost."
 

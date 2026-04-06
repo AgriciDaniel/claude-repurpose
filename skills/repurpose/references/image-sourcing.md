@@ -120,24 +120,15 @@ Style: Modern editorial illustration, flat design with depth, brand-consistent c
 
 ## Platform Dimension Reference
 
-| Platform | Aspect | Pixels | Image Type |
-|----------|--------|--------|------------|
-| Twitter/X | 16:9 | 1600x900 | Hero, thread header |
-| LinkedIn | 4:5 | 1080x1350 | Post, carousel cover |
-| Instagram | 4:5 | 1080x1350 | Carousel, feed |
-| Instagram | 9:16 | 1080x1920 | Story, reel cover |
-| Facebook | 4:5 | 1080x1350 | Feed post |
-| YouTube | 1:1 | 1080x1080 | Community post |
-| Newsletter | 16:9 | 1200x630 | Email hero, OG image |
-| Quote card | 1:1 | 1080x1080 | All social platforms |
+See `platform-specs.md` for the full cross-platform image size table. Key sizes for image sourcing:
 
-**Unsplash resize params** (append to URL, strip existing query string first):
-- Twitter: `?w=1600&h=900&fit=crop&q=80`
-- LinkedIn: `?w=1080&h=1350&fit=crop&q=80`
-- Instagram: `?w=1080&h=1350&fit=crop&q=80`
-- Facebook: `?w=1080&h=1350&fit=crop&q=80`
-- YouTube: `?w=1080&h=1080&fit=crop&q=80`
-- Newsletter: `?w=1200&h=630&fit=crop&q=80`
+| Platform | Pixels | Unsplash Resize Params |
+|----------|--------|------------------------|
+| Twitter/X | 1600x900 | `?w=1600&h=900&fit=crop&q=80` |
+| LinkedIn / Instagram / Facebook | 1080x1350 | `?w=1080&h=1350&fit=crop&q=80` |
+| YouTube Community | 1080x1080 | `?w=1080&h=1080&fit=crop&q=80` |
+| Newsletter / OG | 1200x630 | `?w=1200&h=630&fit=crop&q=80` |
+| Quote card | 1080x1080 | `?w=1080&h=1080&fit=crop&q=80` |
 
 ---
 
@@ -200,22 +191,4 @@ Save prompts to banana-prompts.md --> User generates manually
 
 ## /banana Detection
 
-Check for availability in this order:
-1. `gemini_generate_image` MCP tool present in current session
-2. `~/.claude/skills/banana/SKILL.md` exists on disk
-
-If neither is available, fall back to saving prompts in `banana-prompts.md` (see above).
-
-### /banana Command Patterns
-
-```
-# Single image
-Read references/gemini-models.md, then use gemini_generate_image
-with model gemini-3.1-flash-image-preview
-
-# Batch generation
-/banana batch "quote card for [topic]" 5
-
-# Set aspect ratio before generating
-Use set_aspect_ratio tool before generating
-```
+Check for `gemini_generate_image` MCP tool in current session, or `~/.claude/skills/banana/SKILL.md` on disk. If neither is available, save prompts to `banana-prompts.md` for manual generation.

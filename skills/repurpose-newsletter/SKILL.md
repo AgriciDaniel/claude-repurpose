@@ -44,7 +44,7 @@ Load these before generating any output:
 
 ## Output 1: Newsletter Excerpt
 
-**File:** `newsletter/excerpt.md`
+**File:** `newsletter/newsletter.md`
 
 **Length:** 150-200 words.
 

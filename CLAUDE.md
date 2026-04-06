@@ -5,7 +5,7 @@
 Standalone Claude Code skill that transforms any content (YouTube videos, blog posts,
 podcasts, local files) into 10+ platform-optimized outputs. Follows the Agent Skills
 open standard and the 3-layer architecture (directive, orchestration, execution).
-11 sub-skills, 5 parallel subagents, 8 reference files, and 3 Python scripts.
+13 sub-skills, 5 parallel subagents, 8 reference files, and 3 Python scripts.
 
 ## Architecture
 
@@ -19,18 +19,20 @@ claude-repurpose/
     repurpose-twitter/SKILL.md     # Twitter/X (threads, tweets, polls)
     repurpose-linkedin/SKILL.md    # LinkedIn (posts, PDF carousels, polls)
     repurpose-instagram/SKILL.md   # Instagram (carousels, captions, reels)
+    repurpose-tiktok/SKILL.md      # TikTok (video scripts, carousels, stitch/duet)
     repurpose-facebook/SKILL.md    # Facebook (posts, polls, stories)
     repurpose-youtube/SKILL.md     # YouTube Community (posts, polls)
     repurpose-skool/SKILL.md       # Skool (discussions, challenges, polls)
     repurpose-newsletter/SKILL.md  # Newsletter + email sequences
     repurpose-reddit/SKILL.md      # Reddit (discussion posts)
+    repurpose-quora/SKILL.md       # Quora (answers, Space posts, questions)
     repurpose-quotes/SKILL.md      # Quote graphics + /banana prompts
     repurpose-seo/SKILL.md         # Cross-platform SEO metadata
     repurpose-calendar/SKILL.md    # 7-day publishing calendar
   agents/                          # 5 parallel subagents
     repurpose-social.md            # Twitter + LinkedIn + Facebook
-    repurpose-visual.md            # Instagram + Quotes + Images
-    repurpose-longform.md          # Newsletter + Email + Reddit
+    repurpose-visual.md            # Instagram + TikTok + Quotes + Images
+    repurpose-longform.md          # Newsletter + Email + Reddit + Quora
     repurpose-community.md         # YouTube Community + Skool
     repurpose-seo.md               # SEO metadata across all
   scripts/

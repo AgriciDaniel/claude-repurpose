@@ -2,7 +2,7 @@
 name: repurpose-quotes
 description: >
   Extracts the 5 most quotable moments from content atoms and generates
-  /banana image prompts for each using the 5-Component Formula. Produces
+  /banana image prompts for each using the 6-Component Brief. Produces
   quote cards ready for social sharing with platform-specific aspect ratios,
   color palettes, and text overlays. Sub-skill of the Content Repurposing Engine.
   Use when user says "quote cards", "quote graphics", "quotable moments",
@@ -86,11 +86,11 @@ For each quote:
 **File:** `quotes/banana-prompts.md`
 
 For each of the 5 quotes, generate a /banana-compatible image prompt using the
-5-Component Formula.
+6-Component Brief (matching `references/image-sourcing.md`).
 
-### The 5-Component Formula
+### The 6-Component Brief
 
-Every prompt must specify these 5 components in order:
+Every prompt must specify these 6 components in order:
 
 | Component | Description | Example |
 |-----------|-------------|---------|
@@ -98,6 +98,7 @@ Every prompt must specify these 5 components in order:
 | **Action** | Movement or state of the subject | "bathed in soft morning light" |
 | **Context** | Environment or background setting | "against a clean gradient background" |
 | **Composition** | Layout, framing, text placement zone | "left-aligned with 40% right margin for text overlay" |
+| **Lighting** | Light source, direction, temperature, quality | "soft ambient glow, warm temperature, subtle vignette" |
 | **Style** | Visual aesthetic and rendering approach | "editorial photography, muted tones, shallow depth of field" |
 
 ### Prompt Template
@@ -109,6 +110,7 @@ Every prompt must specify these 5 components in order:
 **Action:** [action or state]
 **Context:** [background/environment]
 **Composition:** [layout and text zone]
+**Lighting:** [light source, direction, temperature]
 **Style:** [aesthetic direction]
 **Dimensions:** [WxH based on target platform]
 **Text Overlay:** "[exact quote text]"

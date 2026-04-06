@@ -19,11 +19,13 @@ Takes **any content** (YouTube video, blog post, podcast, local file) and genera
 | **Twitter/X** | Thread (8-12 tweets) + standalone tweets + poll |
 | **LinkedIn** | Post + PDF carousel script (10-12 slides) + poll |
 | **Instagram** | Carousel (7-10 slides) + caption + reel script |
+| **TikTok** | Video script (15-60s) + carousel/photo mode + stitch/duet concept |
 | **Facebook** | Post + poll + story script |
 | **YouTube Community** | Text post + image concept + poll |
 | **Skool** | Discussion + challenge prompt + poll |
 | **Newsletter** | Excerpt + 3 subject lines + 3-email drip sequence |
 | **Reddit** | Discussion post + subreddit suggestions |
+| **Quora** | Answer (300-1000 words) + Space post + question suggestions |
 | **Quote Graphics** | 5 quotable moments + AI image prompts |
 | **SEO Metadata** | Titles, descriptions, hashtags, keywords per platform |
 | **Calendar** | 7-day publishing schedule with optimal times |
@@ -97,8 +99,8 @@ Input (any content)
       |
       v
   5 Parallel Agents         Social (Twitter+LinkedIn+Facebook)
-  (simultaneous)            Visual (Instagram+Quotes+Images)
-                            Longform (Newsletter+Email+Reddit)
+  (simultaneous)            Visual (Instagram+TikTok+Quotes+Images)
+                            Longform (Newsletter+Email+Reddit+Quora)
                             Community (YouTube+Skool)
                             SEO (metadata across all)
       |
@@ -116,7 +118,7 @@ Input (any content)
 ├── atoms.md                   # Extracted content atoms
 ├── twitter/
 │   ├── thread.md              # 8-12 tweet thread
-│   ├── tweets.md              # Standalone tweets
+│   ├── standalone-tweet.md     # Standalone tweets
 │   └── poll.md
 ├── linkedin/
 │   ├── post.md
@@ -126,6 +128,10 @@ Input (any content)
 │   ├── carousel.md            # 7-10 slide script
 │   ├── caption.md
 │   └── reel-script.md
+├── tiktok/
+│   ├── video-script.md        # 15-60s video script
+│   ├── carousel.md            # Photo mode (2-10 slides)
+│   └── stitch-duet.md         # Stitch/duet concept
 ├── facebook/
 │   ├── post.md
 │   ├── poll.md
@@ -139,12 +145,16 @@ Input (any content)
 │   ├── challenge.md
 │   └── poll.md
 ├── newsletter/
-│   ├── excerpt.md
+│   ├── newsletter.md          # Newsletter excerpt
 │   ├── subject-lines.md
 │   └── email-sequence.md
 ├── reddit/
 │   ├── post.md
 │   └── subreddits.md
+├── quora/
+│   ├── answer.md              # 300-1000 word answer
+│   ├── space-post.md          # Quora Space post
+│   └── questions.md           # Question suggestions
 ├── quotes/
 │   ├── quotes.md
 │   └── banana-prompts.md
@@ -186,7 +196,7 @@ Without /banana, prompts are saved to `banana-prompts.md` for manual use.
 
 ## Architecture
 
-- **11 sub-skills** covering every platform
+- **13 sub-skills** covering every platform
 - **5 parallel subagents** for maximum speed
 - **8 reference files** with platform specs, hook formulas, voice rules, and benchmarks
 - **3 Python scripts** for content extraction (article, transcript, audio)

@@ -81,7 +81,7 @@ Write to `twitter/thread.md`.
 
 ## Output 2: Standalone Tweets (3-5)
 
-Write to `twitter/tweets.md`.
+Write to `twitter/standalone-tweet.md`.
 
 Generate 3-5 standalone tweets. Each one:
 - Captures a single atom and works completely independently

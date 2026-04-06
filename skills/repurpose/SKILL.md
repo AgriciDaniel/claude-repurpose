@@ -3,12 +3,12 @@ name: repurpose
 description: >
   Content Repurposing Engine. Transforms any content (YouTube videos, blog posts,
   podcasts, local files, pasted text) into platform-optimized outputs for
-  Twitter/X, LinkedIn, Instagram, Facebook, YouTube Community, Skool, Reddit,
-  and email newsletters. Atomizes content into reusable pieces, adapts brand
-  voice per platform, generates polls, image prompts (via /banana), publishing
-  calendars, and SEO metadata. Triggers on: "repurpose", "content repurpose",
-  "turn into social media", "cross-platform", "content atomization", "repurpose
-  blog", "repurpose video", "turn this into posts".
+  Twitter/X, LinkedIn, Instagram, TikTok, Facebook, YouTube Community, Skool,
+  Reddit, Quora, and email newsletters. Atomizes content into reusable pieces,
+  adapts brand voice per platform, generates polls, image prompts (via /banana),
+  publishing calendars, and SEO metadata. Triggers on: "repurpose", "content
+  repurpose", "turn into social media", "cross-platform", "content atomization",
+  "repurpose blog", "repurpose video", "turn this into posts", "tiktok", "quora".
 user-invokable: true
 argument-hint: "[url-or-file] [--platforms X,Y] [--voice casual|professional|witty] [--brief] [--images]"
 license: MIT
@@ -20,7 +20,7 @@ metadata:
 
 # Content Repurposing Engine
 
-Transform any content into platform-optimized outputs across 8+ channels.
+Transform any content into platform-optimized outputs across 10+ channels.
 
 ## Quick Reference
 
@@ -130,22 +130,24 @@ After atomization, spawn 5 subagents in parallel. Each agent receives:
 **Sub-skills invoked:** `repurpose-twitter`, `repurpose-linkedin`, `repurpose-facebook`
 
 ### Agent 2: `repurpose-visual`
-**Platforms:** Instagram, Quote cards, Image prompts
+**Platforms:** Instagram, TikTok, Quote cards, Image prompts
 **Receives:** All atoms (especially quotes, stats, insights), voice profile
 **Produces:**
 - Instagram: 1 carousel (7-10 slides with copy) + 1 reel script (30-60s) + caption + hashtags
+- TikTok: 1 video script (15-60s) + 1 carousel (2-10 slides) + 1 stitch/duet concept
 - Quote cards: 3-5 text overlays for image generation
 - Image prompts: hero image + carousel cover + 3 quote card prompts
-**Sub-skills invoked:** `repurpose-instagram`, `repurpose-quotes`
+**Sub-skills invoked:** `repurpose-instagram`, `repurpose-tiktok`, `repurpose-quotes`
 
 ### Agent 3: `repurpose-longform`
-**Platforms:** Newsletter, Email sequence, Reddit
+**Platforms:** Newsletter, Email sequence, Reddit, Quora
 **Receives:** All atoms, full original content reference, voice profile
 **Produces:**
 - Newsletter: subject line + preview text + 200-500 word body
 - Email sequence: 3-email drip (day 0, day 2, day 4) with subject lines and CTAs
 - Reddit: title + post body adapted to subreddit norms
-**Sub-skills invoked:** `repurpose-newsletter`, `repurpose-reddit`
+- Quora: 1 answer (300-1000 words) + 1 Space post + question suggestions
+**Sub-skills invoked:** `repurpose-newsletter`, `repurpose-reddit`, `repurpose-quora`
 
 ### Agent 4: `repurpose-community`
 **Platforms:** YouTube Community, Skool
@@ -169,8 +171,8 @@ After atomization, spawn 5 subagents in parallel. Each agent receives:
 ### Platform filtering
 If `--platforms` is specified, only spawn the agents that cover the requested platforms:
 - `twitter`, `linkedin`, `facebook` → Agent 1
-- `instagram`, `quotes`, `images` → Agent 2
-- `newsletter`, `email`, `reddit` → Agent 3
+- `instagram`, `tiktok`, `quotes`, `images` → Agent 2
+- `newsletter`, `email`, `reddit`, `quora` → Agent 3
 - `youtube`, `skool` → Agent 4
 - `seo` → Agent 5
 
@@ -217,8 +219,16 @@ After all agents complete:
     discussion.md
     challenge.md
     poll.md
+  tiktok/
+    video-script.md
+    carousel.md
+    stitch-duet.md
   reddit/
     post.md
+  quora/
+    answer.md
+    space-post.md
+    questions.md
   newsletter/
     newsletter.md
     email-sequence.md
@@ -237,7 +247,6 @@ After all agents complete:
   all-content.md          # MANDATORY: Single consolidated markdown (all platforms)
   index.html              # MANDATORY: HTML viewer with Copy buttons per content piece
   calendar.md             # 7-day publishing calendar
-  summary.md              # Overview report
 ```
 
 **MANDATORY OUTPUT**: Every `/repurpose` run MUST produce `all-content.md` (single file with everything) and `index.html` (viewer with Copy buttons). Run `python3 scripts/generate_html.py <output-dir>` as the final step.
@@ -264,10 +273,12 @@ Load these references as needed during the pipeline:
 | `repurpose-twitter` | Twitter/X | Standalone tweet, thread, poll |
 | `repurpose-linkedin` | LinkedIn | Text post, carousel, poll |
 | `repurpose-instagram` | Instagram | Carousel, reel script, caption |
+| `repurpose-tiktok` | TikTok | Video script, carousel, stitch/duet concept |
 | `repurpose-facebook` | Facebook | Post, question, poll |
 | `repurpose-youtube` | YouTube Community | Text post, poll, image concept |
 | `repurpose-skool` | Skool | Discussion, challenge, poll |
 | `repurpose-reddit` | Reddit | Subreddit-adapted post |
+| `repurpose-quora` | Quora | Answer, Space post, question suggestions |
 | `repurpose-newsletter` | Email | Newsletter, 3-email drip |
 | `repurpose-quotes` | Visual | Quote cards, text overlays |
 | `repurpose-seo` | Cross-platform | Keywords, hashtags, metadata |
@@ -385,8 +396,8 @@ User input
     v
 [5] Spawn 5 agents in parallel:
     |-- repurpose-social (Twitter + LinkedIn + Facebook)
-    |-- repurpose-visual (Instagram + Quotes + Image prompts)
-    |-- repurpose-longform (Newsletter + Email + Reddit)
+    |-- repurpose-visual (Instagram + TikTok + Quotes + Image prompts)
+    |-- repurpose-longform (Newsletter + Email + Reddit + Quora)
     |-- repurpose-community (YouTube Community + Skool)
     |-- repurpose-seo (Keywords + Hashtags + Metadata)
     |
